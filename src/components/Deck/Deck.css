@@ -1,0 +1,29 @@
+.draw-button{
+    width: 150px;
+    height: 50px;
+    background-color: #008CFF;
+    color: white;
+    border-radius: 10px;
+   
+}
+
+.card-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    place-items: center;
+  }
+
+  .display-container{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .text-title{
+    text-align: center;
+    margin-top: 200px;
+  }
