@@ -47,7 +47,7 @@ Every time the user clicks, the app displays a new card until the deck is empty.
 
 ### Dependencies
 
-**App:** react, react-countdown, react-dom, react-router-dom, react-scripts, react-icons, node-sass  
+**App:** react, react-scripts  
 **Testing:** react-testing-library, Jest
 
 ## Running Tests
