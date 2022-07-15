@@ -1,5 +1,9 @@
 # Card Api Project 
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/33d5597e-16f1-47d9-9e59-fe6bac2c328f/deploy-status)](https://app.netlify.com/sites/card-game-frontend-task/deploys)
+
+[Checkout live site](https://card-game-frontend-task.netlify.app/)
+
 Built an app that displays a deck of cards, one card at a time. When the page loads, send a request to https://deckofcardsapi.com/api/deck/new/shuffle to create a new deck. The Deck ID is then stored to make further requests to retreive each card image. The "Draw Card" button  allows the user to draw a new card.
 
 When a user clicks the button,  another request is sent to the API, this time to https://deckofcardsapi.com/api/deck/${deck_id}/draw/. (make sure to use your actual deck ID). Using the data included in the response a new card image is displayed.
