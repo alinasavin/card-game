@@ -1,6 +1,6 @@
 # Card Api Project 
 
-Built an app that displays a deck of cards, one card at a time. When the page loads, send a request to https://deckofcardsapi.com/api/deck/new/shuffle to create a new deck. The Deck ID is then stored to make further requests to retreive each card image. The "Draw Now" button  allows the user to draw a new card.
+Built an app that displays a deck of cards, one card at a time. When the page loads, send a request to https://deckofcardsapi.com/api/deck/new/shuffle to create a new deck. The Deck ID is then stored to make further requests to retreive each card image. The "Draw Card" button  allows the user to draw a new card.
 
 When a user clicks the button,  another request is sent to the API, this time to https://deckofcardsapi.com/api/deck/${deck_id}/draw/. (make sure to use your actual deck ID). Using the data included in the response a new card image is displayed.
 
@@ -47,7 +47,7 @@ Every time the user clicks, the app displays a new card until the deck is empty.
 
 ### Dependencies
 
-**App:** react, react-scripts  
+**App:** react, react-scripts , react-bootstrap 
 **Testing:** react-testing-library, Jest
 
 ## Running Tests

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Deck.css";
 import Card from "../Card/Card";
+import Button from 'react-bootstrap/Button';
 
 export default function Deck() {
 
@@ -70,7 +71,7 @@ export default function Deck() {
     if (loading) return <div>loading...</div>
     if (!deckId) return <div>Error ...</div>
     return(
-        <div data-testid="deck">
+        <div>
             <h1 className="text-title">{display}</h1>
             <div className="card-container">
             
@@ -84,10 +85,9 @@ export default function Deck() {
     </div>
     </div>
     <div className="display-container">
-    <button className="draw-button" onClick={() =>{
+      <Button variant="primary" className="draw-button" onClick={() =>{
       getCard()
-    }}> Draw card </button>
-
+    }}>Draw Card</Button>
     <h2>VALUE MATCHES: {valueMatch}</h2>
     <h2>SUIT MATCHES: {suitMatch}</h2>
     <h2> {cardCount} cards remaining</h2>

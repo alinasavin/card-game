@@ -1,9 +1,9 @@
 import { render} from '@testing-library/react';
-import Card from './Card';
+import Cards from './Card';
 
 test("data exists", () => {
     const { queryByTestId } = render(
-      <Card  />
+      <Cards  />
     );
     expect(queryByTestId("card")).toBeTruthy();
   });
